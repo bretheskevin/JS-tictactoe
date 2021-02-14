@@ -46,6 +46,7 @@ function restart(player) {
     for (let i = 0; i < 9; i++) {
         grid[i].textContent = infoEmpty;
     }
+    gameEnded = false;
 }
 
 function updateScore(player) {

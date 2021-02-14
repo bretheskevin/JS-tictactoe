@@ -1,0 +1,153 @@
+:root {
+    --size: 33.21%;
+}
+
+@font-face {
+    font-family: Pusab;
+    src: url("../fonts/PUSAB.otf") format("opentype");
+}
+
+body {
+    background: grey;
+    margin: 0;
+    font-family: Pusab, Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    width: 600px;
+    margin-top: 60px;
+    border: 1px solid black;
+}
+
+#one {
+    height: var(--size);
+    width: var(--size);
+    border-right: 1px solid black;
+}
+
+#two {
+    height: var(--size);
+    width: var(--size);
+    border-right: 1px solid black;
+}
+
+#three {
+    height: var(--size);
+    width: var(--size);
+}
+
+#four {
+    height: var(--size);
+    width: var(--size);
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#five {
+    height: var(--size);
+    width: var(--size);
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#six {
+    height: var(--size);
+    width: var(--size);
+    border-top: 1px solid black;
+}
+
+#seven {
+    height: var(--size);
+    width: var(--size);
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#height {
+    height: var(--size);
+    width: var(--size);
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#nine {
+    height: var(--size);
+    width: var(--size);
+    border-top: 1px solid black;
+}
+
+.boxes:hover {
+    background-color: rgb(201, 200, 200);
+}
+
+.boxes-content {
+    display: flex;
+    margin: 0;
+    height: 200px;
+    width: 200px;
+    justify-content: center;
+    font-size: 200px;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 300px;
+    margin-top: 60px;
+    margin-left: 10px;
+    font-size: 40px;
+    border: 1px solid;
+}
+
+.player h1 {
+    font-size: 1.4em;
+    margin: 0;
+}
+
+#score1,
+#score2 {
+    margin: 10px;
+}
+
+.player-score {
+    margin-top: 40px;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#player {
+    font-size: 4em;
+}
+
+#info {
+    font-size: 2em;
+    margin: 0;
+}
+
+button {
+    width: 5em;
+}
+
+.boxes-content {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

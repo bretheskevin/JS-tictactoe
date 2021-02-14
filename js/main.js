@@ -8,6 +8,7 @@ let player = "O";
 
 let player1win = 0;
 let player2win = 0;
+let gameEnded = false;
 
 
 function updatePlayer() {
@@ -95,8 +96,10 @@ function verify(player) {
 
     if (win == true) {
         updateScore(player);
+        gameEnded = true;
         return true;
     }
+
 
     return win;
 }
@@ -113,19 +116,25 @@ function checkTie() {
         restartBtn.disabled = false;
         info.textContent = "TIE !"
     }
+
 }
 
 for (let i = 0; i < 9; i++) {
     grid[i].addEventListener("click", function() {
 
-        if (!errorBox(i)) {
-            udpateBox(i);
 
-            checkTie();
-            verify(player);
-            updatePlayer();
+
+
+        if (gameEnded == false) {
+
+            if (!errorBox(i)) {
+                udpateBox(i);
+
+                checkTie();
+                verify(player);
+                updatePlayer();
+            }
         }
-
     })
 }
 

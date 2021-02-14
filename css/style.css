@@ -151,3 +151,7 @@ button {
     -ms-user-select: none;
     user-select: none;
 }
+
+.player h1 {
+    margin-left: 10px;
+}
